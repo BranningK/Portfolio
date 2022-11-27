@@ -25,6 +25,11 @@ ul {
     color: snow;
 }
 
+body{
+    position: absolute;
+    color:snow;
+}
+
 .nav li,
 .socials{
     background-color: lightsteelblue;
@@ -32,10 +37,49 @@ ul {
     border-radius: 6px;
 }
 
-body{
-    position: absolute;
-    color:snow;
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 90vw;
+    height: 110vh;
+    border-radius: 15px;
+    margin:32px;
 }
+
+#project-1{
+    display: flex;
+    flex: auto;
+    margin: auto;
+    border-radius: 15px;
+    background-color: snow;
+    width: 90vw;
+    height:40vh;
+}
+
+.flex-container div{
+    display: flex;
+    background-color: green;
+    margin: 5px;
+    padding: 50px;
+    border-radius: 15px;
+    justify-content: center;
+    height: 10vh;
+    width: 25vw;
+}
+
+/* div{
+    flex: auto;
+    flex-wrap: wrap;
+    margin-left: 15px;
+    justify-content: space-around;
+    display: inline-block;
+    margin-top: 15px;
+    border-radius: 15px;
+    width: 30vw;
+    height: 30vh;
+    background-color: green;
+} */
 
 .about-me{
     position: relative;
