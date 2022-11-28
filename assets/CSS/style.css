@@ -3,7 +3,7 @@
 }
 
 html{
-    background-color: darkslategray;
+    background-color: rgb(30, 35, 45);
 }
 
 header{
@@ -50,6 +50,35 @@ body{
     margin:32px;
 }
 
+.pic{
+    max-width: 40vw;
+    max-height: 35vh;
+    background: url("/assets/images/down.JPG") no-repeat;
+    display: inline-block;
+}
+
+/* img{
+    max-width: 40vw;
+    max-height: 35vh;
+} */
+
+/* .pic{
+    width: 40vw;
+    height: 35vh;
+    position: relative;
+    display: inline;
+}
+
+.pic .up{
+    display: none;
+    position: relative;
+    z-index: 99;
+}
+
+.pic:hover .up{
+    display:inline;
+} */
+
 #project-1{
     display: flex;
     flex: auto;
@@ -75,7 +104,7 @@ body{
 
 .about-me{
     position: relative;
-    margin-top: 150px;
+    margin-top: 195px;
 }
 
 .my-projects{
@@ -113,7 +142,7 @@ button{
 
 a:link, a:visited {
     background-color: lightsteelblue;
-    color: darkslategray;
+    color: rgb(30, 35, 45);
     border: 2px solid steelblue;
     border-radius: 15px;
     padding: 10px 20px;
