@@ -126,6 +126,18 @@ a:link, a:visited {
     margin: 5px;
 }
 
+a:hover, a:active {
+    background-color: steelblue;
+    border-color: lightsteelblue;
+    color: snow;
+  }
+
+#nav a:hover, a:active {
+    background-color: steelblue;
+    border-color: lightsteelblue;
+    color: snow;
+  }
+
 footer{
     background-color: steelblue;
     align-self: center;
