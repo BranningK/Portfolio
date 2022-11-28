@@ -50,11 +50,12 @@ body{
     margin:32px;
 }
 
-.pic{
-    max-width: 40vw;
-    max-height: 35vh;
-    background: url("/assets/images/down.JPG") no-repeat;
-    display: inline-block;
+.about-me .pic{
+    width: 350px;
+    height: 414px;
+    background-image: url("../../assets/images/down.jpg");
+    display: inline-flex;
+    background-color: transparent;
 }
 
 /* img{
