@@ -58,38 +58,16 @@ body{
 }
 
 .about-me .pic{
-    width: 350px;
-    height: 413px;
+    width: 328px;
+    height: 328px;
     background-image: url("../../assets/images/down.jpg");
     display: inline-flex;
     background-color: transparent;
 }
 
 .about-me .pic:hover{
-    background-image: url(../../assets/images/up.jpg);
+    background-image: url("../../assets/images/up.jpg");
 }
-
-/* img{
-    max-width: 40vw;
-    max-height: 35vh;
-} */
-
-/* .pic{
-    width: 40vw;
-    height: 35vh;
-    position: relative;
-    display: inline;
-}
-
-.pic .up{
-    display: none;
-    position: relative;
-    z-index: 99;
-}
-
-.pic:hover .up{
-    display:inline;
-} */
 
 #project-1{
     display: flex;
