@@ -11,6 +11,7 @@
 
 html{
     background-color: var(--dark);
+    overflow-x: hidden;
 }
 
 header{
@@ -76,7 +77,7 @@ body{
     border-radius: 15px;
     background-image: url("../../assets/images/PSG.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     opacity: 60%;
     justify-content: normal;
     align-items: start;
@@ -91,10 +92,8 @@ body{
     border-radius: 15px;
     background-image: url("../../assets/images/PSG.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     opacity: 100%;
-    /* justify-content: center;
-    align-items: center; */
     width: 90vw;
     height: 46.5vh;
 }
@@ -102,6 +101,8 @@ body{
 .flex-container a{
     display: flex;
     background-image: url(../../assets/images/zone-construction.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 5px;
     padding: 50px;
     border-radius: 15px;
@@ -113,6 +114,11 @@ body{
 #about-me{
     position: relative;
     margin-top: 195px;
+}
+
+#about-me ul{
+    position: relative;
+    display: inline-block;
 }
 
 #my-projects{
@@ -197,18 +203,4 @@ footer .link1 {
     justify-content: normal;
     display: inline;
     margin: 0px;
-}
-
-@media screen and (max-width: 768px) {
-    #project-1{
-        display: flex;
-        flex: auto;
-        margin: auto;
-        border-radius: 15px;
-        background-color: lightblue;
-        justify-content: center;
-        align-items: center;
-        width: 90vw;
-        height:5vh;
-    }
 }
