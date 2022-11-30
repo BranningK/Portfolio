@@ -11,6 +11,7 @@
 
 html{
     background-color: var(--dark);
+    overflow-x: hidden;
 }
 
 header{
@@ -24,6 +25,18 @@ header{
     text-indent: 10px;
 }
 
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    text-indent: 20px;
+    margin-top: 20px;
+    margin-left: 15px;
+    display: flex;
+}
+
 body{
     position: absolute;
     color:var(--light);
@@ -33,7 +46,7 @@ body{
     width: auto;
     height: auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
 }
 
 #nav a{
@@ -51,13 +64,13 @@ body{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    width: 90vw;
-    height: 110vh;
+    width: auto;
+    height: auto;
     border-radius: 15px;
     margin:32px;
 }
 
-.about-me .pic{
+#about-me .pic{
     width: 328px;
     height: 328px;
     background-image: url("../../assets/images/down.jpg");
@@ -65,7 +78,7 @@ body{
     background-color: transparent;
 }
 
-.about-me .pic:hover{
+#about-me .pic:hover{
     background-image: url("../../assets/images/up.jpg");
 }
 
@@ -74,35 +87,58 @@ body{
     flex: auto;
     margin: auto;
     border-radius: 15px;
-    background-color: lightblue;
-    justify-content: center;
-    align-items: center;
+    background-image: url("../../assets/images/PSG.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 60%;
+    justify-content: normal;
+    align-items: start;
     width: 90vw;
-    height:40vh;
+    height: 46.5vh;
 }
 
-.flex-container div{
+#project-1:hover{
     display: flex;
-    background-color: var(--lsb);
+    flex: auto;
+    margin: auto;
+    border-radius: 15px;
+    background-image: url("../../assets/images/PSG.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 100%;
+    width: 90vw;
+    height: 46.5vh;
+}
+
+.flex-container a{
+    display: flex;
+    background-image: url(../../assets/images/zone-construction.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 5px;
     padding: 50px;
     border-radius: 15px;
     justify-content: center;
-    height: 10vh;
-    width: 20vw;
+    height: 20vh;
+    width: 26vw;
 }
 
-.about-me{
+#about-me{
     position: relative;
-    margin-top: 195px;
+    margin-top: 80px;
 }
 
-.my-projects{
+#about-me ul{
+    position: relative;
+    display: inline-block;
+}
+
+#my-projects{
     position: relative;
     margin-top:30px;
 }
 
-.contact-me{
+#contact-me{
     position: relative;
     margin-top:30px;
 }
@@ -166,4 +202,17 @@ footer{
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 10px;
+}
+
+footer .link1 {
+    background: none;
+    color: var(--light);
+    border: none;
+    padding: 0px;
+    text-align: match-parent;
+    text-decoration: underline;
+    align-items: normal;
+    justify-content: normal;
+    display: inline;
+    margin: 0px;
 }
