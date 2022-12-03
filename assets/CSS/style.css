@@ -231,82 +231,41 @@ footer .link1 {
 
 @media screen and (max-width: 975px) {
     #nav a{
-        display: flex;
-        flex-flow: row wrap;
-        background-color: var(--lsb);
-        padding:5px;
-        border-radius: 15px;
-        align-items: center;
         width: 13vw;
-        height: 7vh;
     }
 }
 
 @media screen and (max-width: 768px) {
     #nav a{
-        display: flex;
-        flex-flow: row wrap;
-        background-color: var(--lsb);
-        padding:5px;
-        border-radius: 15px;
-        align-items: center;
         width: 11vw;
         height: 10vh;
     }
     #nav{
         width: auto;
         height: auto;
-        display: flex;
         justify-content: flex-end;
     }
 }
 
 @media screen and (max-width: 580px) {
     #nav a{
-        display: flex;
-        flex-flow: row wrap;
-        background-color: var(--lsb);
-        padding:5px;
-        border-radius: 15px;
-        align-items: center;
         width: 12vw;
         height: 10vh;
     }
-    #nav{
-        width: auto;
-        height: auto;
-        display: flex;
-        justify-content: flex-end;
-    }
     nav{
-        display: flex;
-        justify-content: space-between;
         margin-right: 5px;
     }
 }
 
 @media screen and (max-width: 445px) {
     #nav a{
-        display: flex;
-        flex-flow: row wrap;
-        background-color: var(--lsb);
-        padding:5px;
-        border-radius: 15px;
         align-items: flex-start;
         justify-content: flex-start;
         width: 25vw;
         height: 3vh;
     }
     #nav{
-        width: auto;
-        height: auto;
-        display: flex;
         flex-flow: column;
-        justify-content: flex-end;
-    }
-    nav{
-        display: flex;
-        justify-content: space-between;
     }
     header{
         padding:5px;
@@ -318,22 +277,12 @@ footer .link1 {
 }
 @media screen and (max-width:375px) {
         #nav a{
-            display: flex;
-            flex-flow: row wrap;
-            background-color: var(--lsb);
-            padding:5px;
-            border-radius: 15px;
-            align-items: flex-start;
             justify-content: center;
             width: 35vw;
-            height: 3vh;
         }
 }
 @media screen and (max-width: 320) {
     #about-me .pic{
         width: 195px;
-    }
-    #about-me{
-        margin-top: 140px;
     }
 }
