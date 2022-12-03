@@ -1,25 +1,3 @@
-# Portfolio
-
-## Description
-- The motivation was to build a portfolio to present a compilation of my work to potential employers
-- It helped me learn CSS styling to a much better level
-
-## Installation
-
-N/A
-
-## Usage
-
-For employers: View a collection of my work to consider employment
-For myself: To find myself a job in the future 
-
-## Credits
-
-Construction image by d3images
-[https://www.freepik.com/free-photo/zone-construction_953361.htm#query=coming%20soon&position=11&from_view=search&track=sph] 
-
-## License
-
 MIT License
 
 Copyright (c) [2022] [Branning Knight]
