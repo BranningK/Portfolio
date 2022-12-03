@@ -15,7 +15,7 @@ html{
     overflow-x: hidden;
     max-width: 100vw;
 }
-/* Base end */
+/* Base end ---------------------------------------------- */
 
 /* Start page */
 body{
@@ -75,7 +75,7 @@ h1{
     color: var(--light);
   }
 
-/* End Header */
+/* End Header ----------------------------------------------*/
 
 /* Start About Me */
 #about-me{
@@ -99,9 +99,14 @@ h1{
     position: relative;
     display: inline-block;
 }
-/* End About Me */
+/* End About Me ----------------------------------------------*/
 
 /* Start My Projects */
+#my-projects{
+    position: relative;
+    margin-top:30px;
+}
+
 .flex-container{
     display: flex;
     flex-flow: row wrap;
@@ -142,53 +147,18 @@ h1{
 }
 
 #project-1:hover{
-    display: flex;
-    flex: auto;
-    margin: auto;
-    border-radius: 15px;
-    background-image: url("../../assets/images/PSG.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
     opacity: 100%;
-    width: 90vw;
-    height: 46.5vh;
 }
-
-#my-projects{
-    position: relative;
-    margin-top:30px;
-}
-/* End My Projects */
+/* End My Projects ---------------------------------------------- */
 
 /* Start Contact Me */
-#contact-me{
-    position: relative;
-    margin-top:30px;
-}
-/* Email/Name Box */
-input{
-    border-radius: 10px;
-    height: 20px;
-    margin-bottom: 5px;
-}
-/* Submit Box */
-button{
-    height: 30px;
-    border-radius: 6px;
-    border-color: var(--mid);
-}
 
 /* For contact links */
 .social-container{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    margin: 5px;
     margin-bottom: 50px;
-    padding: 5px;
-    height: 25vh;
-    width: 90vw;  
 }
 /* To style social links */
 a:link, a:visited {
@@ -197,7 +167,6 @@ a:link, a:visited {
     border: 2px solid var(--mid);
     border-radius: 15px;
     padding: 10px 20px;
-    text-align: center;
     text-decoration: none;
     align-items: center;
     justify-content: center;
@@ -212,34 +181,41 @@ a:hover, a:active {
     border-color: var(--lsb);
     color: var(--light);
 }
-/* End social link styling */
-/* End Contact me */
+/* End social link styling -------------------------------------------- */
+
+/* Email/Name Box */
+input{
+    border-radius: 10px;
+    height: 20px;
+    margin-bottom: 5px;
+}
+/* Submit Box */
+button{
+    height: 30px;
+    border-radius: 6px;
+    border-color: var(--mid);
+}
+/* End Contact me ----------------------------------------------*/
 
 /* Start Footer */
 footer{
     background-color: var(--mid);
-    align-self: center;
     text-align: center;
     max-width: 100vw;
     padding: 15px;
     margin-top: 10px;
-    margin-left: -8px;
 }
 
 footer .link1 {
     background: none;
-    color: var(--light);
     border: none;
     padding: 0px;
-    text-align: match-parent;
     text-decoration: underline;
-    align-items: normal;
-    justify-content: normal;
     display: inline;
     margin: 0px;
 }
-/* End Footer */
-/* End Page */
+/* End Footer ---------------------------------------------- */
+/* End Page ---------------------------------------------- */
 
 /* Responsive Design Code */
 @media screen and (max-width: 975px) {
