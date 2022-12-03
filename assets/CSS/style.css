@@ -86,13 +86,13 @@ h1{
 #about-me .pic{
     width: 328px;
     height: 328px;
-    background-image: url("../../assets/images/down.jpg");
+    background-image: url("../../assets/images/down.JPG");
     display: inline-flex;
     background-color: transparent;
 }
 
 #about-me .pic:hover{
-    background-image: url("../../assets/images/up.jpg");
+    background-image: url("../../assets/images/up.JPG");
 }
 
 #about-me ul{
