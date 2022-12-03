@@ -1,3 +1,4 @@
+/* Base set up */
 :root{
     --dark: rgb(30, 35, 45);
     --mid: steelblue;
@@ -14,11 +15,20 @@ html{
     overflow-x: hidden;
     max-width: 100vw;
 }
+/* Base end ---------------------------------------------- */
 
+/* Start page */
+body{
+    position: absolute;
+    color:var(--light);
+    max-width: 100vw;
+    margin: auto;
+}
+
+/* Begin Header */
 header{
     position: fixed;
     background-color: var(--mid);
-    align-self: center;
     margin-top: -10px;
     margin-left: -10px;
     padding:15px;
@@ -32,21 +42,13 @@ header{
 nav{
     display: flex;
     justify-content: space-between;
-    margin-right: 61px;
+    margin-right: 10px;
 }
 
 h1{
-    text-indent: 20px;
     margin-top: 20px;
     margin-left: 15px;
     display: flex;
-}
-
-body{
-    position: absolute;
-    color:var(--light);
-    max-width: 100vw;
-    margin: auto;
 }
 
 #nav{
@@ -54,7 +56,6 @@ body{
     height: auto;
     display: flex;
     justify-content: flex-end;
-    margin-right: 6vw;
 }
 
 #nav a{
@@ -65,18 +66,21 @@ body{
     border-radius: 15px;
     align-items: center;
     width: 10vw;
-    height: 5vh;
+    height: 7vh;
 }
 
-.flex-container{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    width: auto;
-    height: auto;
-    border-radius: 15px;
-    margin:32px;
-    margin-right: 61px;
+#nav a:hover, a:active {
+    background-color: var(--mid);
+    border-color: var(--lsb);
+    color: var(--light);
+  }
+
+/* End Header ----------------------------------------------*/
+
+/* Start About Me */
+#about-me{
+    position: relative;
+    margin-top: 105px;
 }
 
 #about-me .pic{
@@ -91,36 +95,28 @@ body{
     background-image: url("../../assets/images/up.jpg");
 }
 
-#project-1{
-    display: flex;
-    flex: auto;
-    margin: auto;
-    border-radius: 15px;
-    background-image: url("../../assets/images/PSG.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    opacity: 60%;
-    justify-content: normal;
-    align-items: start;
-    width: 90vw;
-    height: 46.5vh;
+#about-me ul{
+    position: relative;
+    display: inline-block;
+}
+/* End About Me ----------------------------------------------*/
+
+/* Start My Projects */
+#my-projects{
+    position: relative;
+    margin-top:30px;
 }
 
-#project-1:hover{
+.flex-container{
     display: flex;
-    flex: auto;
-    margin: auto;
-    border-radius: 15px;
-    background-image: url("../../assets/images/PSG.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    opacity: 100%;
-    width: 90vw;
-    height: 46.5vh;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin:32px;
 }
-
+/* For the placeholder project links */
 .flex-container a{
     display: flex;
     background-image: url(../../assets/images/zone-construction.jpg);
@@ -134,109 +130,148 @@ body{
     height: 20vh;
     width: 26vw;
 }
-
-#about-me{
-    position: relative;
-    margin-top: 105px;
+/* Prework Study Guide Link */
+#project-1{
+    display: flex;
+    flex: auto;
+    border-radius: 15px;
+    background-image: url("../../assets/images/PSG.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    opacity: 60%;
+    justify-content: normal;
+    align-items: start;
+    width: 90vw;
+    height: 46.5vh;
 }
 
-#about-me ul{
-    position: relative;
-    display: inline-block;
+#project-1:hover{
+    opacity: 100%;
 }
+/* End My Projects ---------------------------------------------- */
 
-#my-projects{
-    position: relative;
-    margin-top:30px;
-}
+/* Start Contact Me */
 
-#contact-me{
-    position: relative;
-    margin-top:30px;
-}
-
-input{
-    border-radius: 10px;
-    height: 20px;
-    margin-bottom: 5px;
-}
-
-button{
-    height: 30px;
-    border-radius: 6px;
-    border-color: var(--mid);
-}
-
+/* For contact links */
 .social-container{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    margin: 5px;
     margin-bottom: 50px;
-    padding: 5px;
-    height: 10vh;
-    width: 90vw;  
 }
-
+/* To style social links */
 a:link, a:visited {
     background-color: var(--lsb);
     color: var(--dark);
     border: 2px solid var(--mid);
     border-radius: 15px;
     padding: 10px 20px;
-    text-align: center;
     text-decoration: none;
     align-items: center;
     justify-content: center;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     margin: 5px;
+    width: 78vw;
 }
 
 a:hover, a:active {
     background-color: var(--mid);
     border-color: var(--lsb);
     color: var(--light);
-  }
+}
+/* End social link styling -------------------------------------------- */
 
-#nav a:hover, a:active {
-    background-color: var(--mid);
-    border-color: var(--lsb);
-    color: var(--light);
-  }
+/* Email/Name Box */
+input{
+    border-radius: 10px;
+    height: 20px;
+    margin-bottom: 5px;
+}
+/* Submit Box */
+button{
+    height: 30px;
+    border-radius: 6px;
+    border-color: var(--mid);
+}
+/* End Contact me ----------------------------------------------*/
 
+/* Start Footer */
 footer{
     background-color: var(--mid);
-    align-self: center;
     text-align: center;
     max-width: 100vw;
     padding: 15px;
     margin-top: 10px;
-    margin-left: -8px;
 }
 
 footer .link1 {
     background: none;
-    color: var(--light);
     border: none;
     padding: 0px;
-    text-align: match-parent;
     text-decoration: underline;
-    align-items: normal;
-    justify-content: normal;
     display: inline;
     margin: 0px;
+}
+/* End Footer ---------------------------------------------- */
+/* End Page ---------------------------------------------- */
+
+/* Responsive Design Code */
+@media screen and (max-width: 975px) {
+    #nav a{
+        width: 13vw;
+    }
 }
 
 @media screen and (max-width: 768px) {
     #nav a{
-        display: flex;
-        flex-flow: row wrap;
-        background-color: var(--lsb);
+        width: 11vw;
+        height: 10vh;
+    }
+    #nav{
+        width: auto;
+        height: auto;
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    #nav a{
+        width: 12vw;
+        height: 10vh;
+    }
+    nav{
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 445px) {
+    #nav a{
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 25vw;
+        height: 3vh;
+    }
+    #nav{
+        flex-flow: column;
+    }
+    header{
         padding:5px;
-        border-radius: 15px;
-        align-items: center;
-        width: 10vw;
-        height: 7vh;
+        text-indent: 0px;
+    }
+    #about-me{
+        margin-top: 140px;
+    }
+}
+@media screen and (max-width:375px) {
+        #nav a{
+            justify-content: center;
+            width: 35vw;
+        }
+}
+@media screen and (max-width: 320) {
+    #about-me .pic{
+        width: 195px;
     }
 }
