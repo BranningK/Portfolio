@@ -1,3 +1,4 @@
+/* Base set up */
 :root{
     --dark: rgb(30, 35, 45);
     --mid: steelblue;
@@ -14,11 +15,20 @@ html{
     overflow-x: hidden;
     max-width: 100vw;
 }
+/* Base end */
 
+/* Start page */
+body{
+    position: absolute;
+    color:var(--light);
+    max-width: 100vw;
+    margin: auto;
+}
+
+/* Begin Header */
 header{
     position: fixed;
     background-color: var(--mid);
-    align-self: center;
     margin-top: -10px;
     margin-left: -10px;
     padding:15px;
@@ -36,17 +46,9 @@ nav{
 }
 
 h1{
-    text-indent: 20px;
     margin-top: 20px;
     margin-left: 15px;
     display: flex;
-}
-
-body{
-    position: absolute;
-    color:var(--light);
-    max-width: 100vw;
-    margin: auto;
 }
 
 #nav{
@@ -67,16 +69,18 @@ body{
     height: 7vh;
 }
 
-.flex-container{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    height: auto;
-    border-radius: 15px;
-    margin:32px;
-    margin-right: 61px;
+#nav a:hover, a:active {
+    background-color: var(--mid);
+    border-color: var(--lsb);
+    color: var(--light);
+  }
+
+/* End Header */
+
+/* Start About Me */
+#about-me{
+    position: relative;
+    margin-top: 105px;
 }
 
 #about-me .pic{
@@ -91,10 +95,40 @@ body{
     background-image: url("../../assets/images/up.jpg");
 }
 
+#about-me ul{
+    position: relative;
+    display: inline-block;
+}
+/* End About Me */
+
+/* Start My Projects */
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin:32px;
+}
+/* For the placeholder project links */
+.flex-container a{
+    display: flex;
+    background-image: url(../../assets/images/zone-construction.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 5px;
+    padding: 50px;
+    border-radius: 15px;
+    justify-content: center;
+    height: 20vh;
+    width: 26vw;
+}
+/* Prework Study Guide Link */
 #project-1{
     display: flex;
     flex: auto;
-    margin: auto;
     border-radius: 15px;
     background-image: url("../../assets/images/PSG.jpg");
     background-repeat: no-repeat;
@@ -121,52 +155,31 @@ body{
     height: 46.5vh;
 }
 
-.flex-container a{
-    display: flex;
-    background-image: url(../../assets/images/zone-construction.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    margin: 5px;
-    padding: 50px;
-    border-radius: 15px;
-    justify-content: center;
-    height: 20vh;
-    width: 26vw;
-}
-
-#about-me{
-    position: relative;
-    margin-top: 105px;
-}
-
-#about-me ul{
-    position: relative;
-    display: inline-block;
-}
-
 #my-projects{
     position: relative;
     margin-top:30px;
 }
+/* End My Projects */
 
+/* Start Contact Me */
 #contact-me{
     position: relative;
     margin-top:30px;
 }
-
+/* Email/Name Box */
 input{
     border-radius: 10px;
     height: 20px;
     margin-bottom: 5px;
 }
-
+/* Submit Box */
 button{
     height: 30px;
     border-radius: 6px;
     border-color: var(--mid);
 }
 
+/* For contact links */
 .social-container{
     display: flex;
     flex-flow: row wrap;
@@ -177,7 +190,7 @@ button{
     height: 25vh;
     width: 90vw;  
 }
-
+/* To style social links */
 a:link, a:visited {
     background-color: var(--lsb);
     color: var(--dark);
@@ -198,14 +211,11 @@ a:hover, a:active {
     background-color: var(--mid);
     border-color: var(--lsb);
     color: var(--light);
-  }
+}
+/* End social link styling */
+/* End Contact me */
 
-#nav a:hover, a:active {
-    background-color: var(--mid);
-    border-color: var(--lsb);
-    color: var(--light);
-  }
-
+/* Start Footer */
 footer{
     background-color: var(--mid);
     align-self: center;
@@ -228,7 +238,10 @@ footer .link1 {
     display: inline;
     margin: 0px;
 }
+/* End Footer */
+/* End Page */
 
+/* Responsive Design Code */
 @media screen and (max-width: 975px) {
     #nav a{
         width: 13vw;
