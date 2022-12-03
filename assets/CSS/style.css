@@ -18,8 +18,10 @@ header{
     position: fixed;
     background-color: var(--mid);
     align-self: center;
-    border-radius: 10px;
-    width:99%;
+    margin-top: -10px;
+    margin-left: -10px;
+    padding:15px;
+    width: 100%;
     color: var(--light);
     z-index: 1;
     text-indent: 10px;
@@ -47,6 +49,7 @@ body{
     height: auto;
     display: flex;
     justify-content: flex-end;
+    margin-right: 6vw;
 }
 
 #nav a{
@@ -90,6 +93,7 @@ body{
     background-image: url("../../assets/images/PSG.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     opacity: 60%;
     justify-content: normal;
     align-items: start;
@@ -105,6 +109,7 @@ body{
     background-image: url("../../assets/images/PSG.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     opacity: 100%;
     width: 90vw;
     height: 46.5vh;
@@ -115,6 +120,7 @@ body{
     background-image: url(../../assets/images/zone-construction.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     margin: 5px;
     padding: 50px;
     border-radius: 15px;
@@ -125,7 +131,7 @@ body{
 
 #about-me{
     position: relative;
-    margin-top: 80px;
+    margin-top: 105px;
 }
 
 #about-me ul{
@@ -197,11 +203,9 @@ footer{
     background-color: var(--mid);
     align-self: center;
     text-align: center;
-    width: 95.6vw;
+    width: 100vw;
     padding: 15px;
     margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 10px;
 }
 
 footer .link1 {
@@ -215,4 +219,8 @@ footer .link1 {
     justify-content: normal;
     display: inline;
     margin: 0px;
+}
+
+@media screen {
+    
 }
